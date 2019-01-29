@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用的html块级标签</title>
+</head>
+<body>
+<!--常用的有语义的块级元素 有默认样式  独占一行-->
+    <!--标题标签 h1-h6-->
+    这是一个标签    <!--这个不是块级元素-->、
+    这是另一个标题
+    <h1>这是一级标题</h1>
+    <h2>这是二级标题</h2>
+    <h3>这是三级标题</h3>
+    <h4>这是四级标题</h4>
+    <h5>这是五级标题</h5>
+    <h6>这是六级标题</h6>
+
+    <!--段落标签  独占一行 有默认样式-->
+    <!--br 强制换行-->
+    <p>超文本标记语言<br>（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。 </p>
+    <p>超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。 </p>
+
+    <!--列表标签-->
+        <!--无序列表 有默认样式 独占一行-->
+        <ul>
+            <li>列表项1</li>
+            <li>列表项2</li>
+            <li>列表项3</li>
+        </ul>
+
+        <!--有序列表-->
+        <!--有序列表有俩个属性  type属性设置有序列表的标记类型  start属性设置开始项-->
+        <ol type="a" start="5">
+            <li>有序列表项1</li>
+            <li>有序列表项2</li>
+            <li>有序列表项3</li>
+        </ol>
+
+        <!--自定义列表-->
+        <dl>
+            <dt>自定义列表标题</dt>
+            <dd>自定义列表项</dd>
+            <dd>自定义列表项</dd>
+        </dl>
+
+    <!--表格标签 table声明一个表格 th表头 tr表示行 td表示列-->
+    <!--
+        border 边框
+        cellpadding 内容距离表框的距离
+        cellspacing 单元格和单元格之间的距离
+        rowspan 垂直合并（跨行显示）
+        colspan 水平合并（跨列显示）
+        anglin 内容水平对其方式
+        valign 内容垂直对其方式
+    -->
+    <!--
+        table 的属性 : width   设置单元格的总体宽度
+                       height  设置单元格的总体高度
+                       border 设置边框是否显示
+                       cellpadding 设置表格当中内容距离边框间距
+                       cellspacing 设置表格和表格之间的间距
+        单元格合并 :colspan  设置水平方向一个单元格占据的宽度
+                   rowspan  设置垂直方一个单元格占据的高度
+        单元格内容的对齐方式: align 水平对齐方式 默认是靠左显示(left)   center  right
+                            valign 处置对齐方式 默认垂直居中(middle)   top    bottom
+                            注意:如果给tr设置  会影响整行 给td设置只影响当前的单元格
+        th 标签代表表头  默认水平居中  并且有加粗效果
+
+    -->
+    <table border="1" cellpadding="10px" cellspacing="0" width="800px" height="500px">
+        <tr align=" center">
+            <!--<td colspan="4">hello</td>-->
+            <th colspan="4">这是表头</th>
+        </tr>
+        <tr valign="bottom">
+            <td colspan="2">这是第一行第一列</td>
+            <td>这是第一行第二列</td>
+            <td>这是第一行第三列</td>
+        </tr>
+        <tr>
+            <td>这是第二行第一列</td>
+            <td>这是第二行第二列</td>
+            <td colspan="2">这是第二行第三列</td>
+        </tr>
+    </table>
+    <!--水平分割线-->
+    <hr>
+    <!--区块元素 没有默认样式(没有默认的语以) div 独占一行 一般用来划定一块区域  配合css在布局当中使用-->
+    <div>这是一个div</div>
+
+</body>
+</html>
