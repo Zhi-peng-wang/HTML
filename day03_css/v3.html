@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择器</title>
+    <style>
+        /* 层级选择器 通过父级元素来设置子元素的样式  还可以设置子元素的子级的样式 */
+        .wrap{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        .wrap div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
