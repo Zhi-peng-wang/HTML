@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css三种基本选择器</title>
+    <style>
+        /*
+        标签选择器  通过标签来设置元素的样式  影响范围最大
+         */
+        /*div{*/
+            /*width: 300px;*/
+            /*height: 300px;*/
+            /*background-color: aqua;*/
+        /*}*/
+        /*
+        类选择器  通过class类名来设置元素的样式  影响范围可控制相对较小
+         */
+        .item1{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        .item2{
+            width: 300px;
+            height: 300px;
+            background-color: darkgrey;
+        }
+        /*
+        #id id选择器  通过id属性的值来设置元素的样式  影响范围最小
+            注意id在html当中具有唯一性，不能重名， 虽然在css中没什么大问题但是在js调用时候会出现问题
+         */
+        #box1{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+        }
+        #box2{
+            width: 300px;
+            height: 300px;
+            /*
+            设置边框
+             */
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item1"></div>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>
