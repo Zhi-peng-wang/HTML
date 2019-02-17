@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本设置</title>
+    <style>
+        .fonts{
+            /*设置字体颜色 color*/
+            color: black;
+
+            /*
+                字体大小 font-siza
+                谷歌浏览器默认大小为16px
+                谷歌浏览器最小为12px，当设置小于12px时 也是以12px来显示
+            */
+            font-size: 30px;
+
+            /*
+                设置字体 font-family
+                注意：如果设置的字体，用户电脑中没有改字体则将会以默认字体来显示
+            */
+            font-family: '宋体';
+
+            /*
+                font-style 设置文本是否为斜体
+            */
+            font-style: italic;
+
+            /*font-weight 设置加粗*/
+            font-weight: bold;
+
+            /*设置行高 line-heignt*/
+            line-height: 40px;
+
+            /*设置首行缩进*/
+            text-indent: 60px;
+
+            /*设置文本居中方式*/
+            text-align: center;
+
+        }
+        .item2{
+            width: 500px;
+            height: 200px;
+            background-color: skyblue;
+            /*
+                利用line-height设置单行文本的垂直居中
+                注意：在设置单行文本垂直居中的时候，值给父级元素的高度一样就能实现该效果
+            */
+            line-height: 200px;
+
+            text-align: center;
+        }
+        a{
+            /*text-decoration:none; 将文字下划线去掉*/
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="fonts">
+        color 设置文字的颜色，如： color:red;<br>
+        font-size 设置文字的大小，如：font-size:12px;<br>
+        font-family 设置文字的字体，如：font-family:'微软雅黑';<br>
+        font-style 设置字体是否倾斜，如：font-style:'normal'; 设置不倾斜，font-style:'italic';设置文字倾斜<br>
+        font-weight 设置文字是否加粗，如：font-weight:bold; 设置加粗 font-weight:normal 设置不加粗<br>
+
+        line-height 设置文字的行高，如：line-height:24px;<br>
+        text-decoration 设置文字的下划线，如：text-decoration:none; 将文字下划线去掉<br>
+        text-indent 设置文字首行缩进，如：text-indent:24px; 设置文字首行缩进24px<br>
+        text-align 设置文字水平对齐方式，如text-align:center 设置文字水平居中<br>
+    </div>
+    <div class="item2">
+        line-height 设置文字的行高，如：line-height:24px;<br>
+    </div>
+    <a href="http://www.baidu.com">baidu</a>
+</body>
+</html>
