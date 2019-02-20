@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js的基本使用</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+<!--内联式-->
+<script>
+    alert("js使用成功 ")
+</script>
+<!--外联式 通过script标签的src属性来引入外部js文件-->
+<script type="text/javascript" src="1.js">
+    <!--注意：如果使用了外部引入js文件，那么此标签中不能在写js程序，他会不执行-->
+    // alert("ok") 不会执行
+</script>
+
+    <!--行间样式-->
+    <!--
+        on 当
+        click 点击
+    -->
+    <div onclick="alert('行间样式生效了')"></div>
+    <a href="javascript:alert('hello')">aa</a>
+    <!--这种写法不会暴露alert的弹窗内容-->
+    <a href="javascript:void(0)" onclick="alert('aaaa')">aaaa</a>
+</body>
+</html>
