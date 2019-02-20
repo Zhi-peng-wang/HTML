@@ -3,8 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <title>页面布局</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .header{
+            width: 100%;
+            /*height: 50px;*/
+            background: red;
+        }
+        .header-top{
+            width: 100%;
+            height: 40px;
+            background: aquamarine;
+        }
+        .header-top a{
+            /*使用inline-block会产生间隙 导致距离不够*/
+            /*display: inline-block;*/
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            width: 80px;
+        }
+        #a1{
+            width: 420px;
+            text-align: center;
+            margin-left: 137px;
+        }
+        #a2{
+            width: 88px;
+        }
+        .header-top-content{
+            width: 1205px;
+            height: 40px;
+            margin: 0 auto;
+            background: oldlace;
+        }
+        .header-nav{
+            width: 1205px;
+            height: 30px;
+            background: gold;
+            margin: 0 auto;
+            font-size: 12px;
+            line-height: 30px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        .header-nav-1{
+            width: 120px;
+            height: 30px;
+            float: left;
+            margin-left: 35px;
+        }
+        .header-nav-2{
+            width: 56px;
+            height: 30px;
+            float: right;
+            margin-left: 35px;
+        }
+        .header-nav-3{
+            width: 65px;
+            height: 30px;
+            float: right;
+            margin-left: 35px;
+        }
+        .header-nav-4{
+            width: 100px;
+            height: 30px;
+            float: right;
+            margin-left: 35px;
+        }
+        .content{
+            width: 100%;
+            height: 1000px;
+            background: skyblue;
+        }
+        .footer{
+            width: 100%;
+            height: 300px;
+            background: yellow;
+        }
+    </style>
 </head>
 <body>
+    <!--页面头部-->
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <a href="" id="a1">3月开工季</a>
+                <a href="" id="a2">微专业></a>
+                <a href="">办公效率></a>
+                <a href="">生活方式></a>
+                <a href="">职场提升></a>
+                <a href="">产品设计></a>
+                <a href="">编程开发></a>
+                <a href="">语言学习></a>
+                <a href="">亲子教育></a>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav-1">创造更有效的学习!</div>
+            <div class="header-nav-4">中国大学MOOC</div>
+            <div class="header-nav-3">网易100分</div>
+            <div class="header-nav-2">极客战记</div>
+        </div>
+    </div>
+    <!--页面内容-->
+    <div class="content">
+        <!--内容当中的第一部分-->
+        <div class="content-nav">
+            <div class="content-nav-logo"></div>
+            <div class="content-nav-nav"></div>
+        </div>
+        <!--内容中的第二部分-->
+         <div class="content-banner"></div>
+        <!--内容的第三部分-->
+        <div class="content-class"></div>
+        <!--内容的第四部分-->
+        <div class="content-item"></div>
+        <!--内容的第五部分-->
+        <div class="content-item5"></div>
+    </div>
+    <!--页面底部-->
+    <div class="footer">
 
+    </div>
 </body>
 </html>
