@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>函数</title>
+    <title>js中的函数定义方法</title>
 </head>
 <body>
+    <script>
+        //1.使用function  关键字定义函数   这种方式优先级最高  在哪调用都没有问题
+        //函数不调用不执行
 
+        //调用函数  此时函数是可以被执行的
+        //因为在js中有预编译的处理，在表达式中定义的函数不会被执行
+        //demo();
+        function demo() {
+            alert("函数被调用了");
+        }
+
+        //2.在表达式当中定义函数(匿名f函数)    该种方式 如果在前面调用会报错，未定义
+        var demo1=function () {
+            alert("这是匿名函数")
+        };
+        console.log(demo1);
+        demo1();
+    </script>
+    
+    
 </body>
 </html>
