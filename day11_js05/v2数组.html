@@ -12,6 +12,43 @@
     var arr1=[1,"s","hfajk"];
     console.log(arr1);
 
+    //获取数组的长度
+    console.log(arr1.length);
+
+    //获取数组元素索引为0的元素
+    console.log(arr1[0]);
+
+    //修改arr1数组中索引为0的元素
+    arr1[0]=10;
+    console.log(arr1[0]);
+
+    //给数组的最后添加一个元素或多个元素
+    arr1.push(66,99);
+    console.log(arr1);
+
+    //删除数组中的最后一个元素 传参与不传参没有影响
+    arr1.pop();
+    console.log(arr1);
+
+    //从数组的前面增加元素 unshift
+    arr1.unshift(88,77)
+    console.log(arr1);
+
+    //从数组的前面删除第一个元素   传参与不传参没有影响
+    arr1.shift()
+    console.log(arr1);
+
+    //增加或者删除数组中的元素  splice替换
+    //  如果只有一个参数，就是从第一个元素之后所有的元素都会被删除
+    //  如果传递俩个参数，那就是按照指定个元素之后删除几个元素，第二个元素指定删除的个数
+    //  如果转递三个元素，第一个元素，元素位置，第二个指定删除个数，第三个元素用来替换的元素
+    arr1.splice(1)
+    console.log(arr1);
+
+
+    //多位数组
+    var arr2=[1,2,3,['a','b'],['a','b','c']]
+    console.log(arr2[3][0]);
 </script>
 </body>
 </html>
